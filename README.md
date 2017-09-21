@@ -1,0 +1,2 @@
+# gopathdep
+Manage $GOPATH dependencies
