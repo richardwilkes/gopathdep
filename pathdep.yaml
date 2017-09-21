@@ -1,0 +1,18 @@
+version: "1.0"
+dependencies:
+- import: github.com/kardianos/osext
+  commit: ae77be60afb1dcacde03767a8c37337fad28ac14
+- import: github.com/pkg/term
+  commit: b1f72af2d63057363398bec5873d16a98b453312
+- import: github.com/richardwilkes/atexit
+  commit: b891fbb8bffb8a9e03497a3de97f747fedcf2bf8
+- import: github.com/richardwilkes/cmdline
+  commit: 499db15e1d40f8b23232994a1ab946700bce9904
+- import: github.com/richardwilkes/errs
+  commit: ed9b4251581e052b12d5cdbf826f845b8e7eec1b
+- import: github.com/richardwilkes/i18n
+  commit: 8cf2374f34c176be56fc93050f79261ba1d50b89
+- import: github.com/richardwilkes/term
+  commit: 54bf2e8295c8429ef0e65db2d0f69e3874e51a41
+- import: gopkg.in/yaml.v2
+  commit: eb3733d160e74a9c7e442f435eb3bea458e1d19f
