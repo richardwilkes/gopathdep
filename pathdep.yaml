@@ -11,7 +11,7 @@ dependencies:
 - import: github.com/richardwilkes/errs
   commit: ed9b4251581e052b12d5cdbf826f845b8e7eec1b
 - import: github.com/richardwilkes/i18n
-  commit: 8cf2374f34c176be56fc93050f79261ba1d50b89
+  tag: v1.0
 - import: github.com/richardwilkes/term
   commit: 54bf2e8295c8429ef0e65db2d0f69e3874e51a41
 - import: gopkg.in/yaml.v2
