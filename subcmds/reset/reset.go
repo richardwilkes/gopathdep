@@ -7,10 +7,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/richardwilkes/cmdline"
+	"github.com/richardwilkes/gokit/cmdline"
+	"github.com/richardwilkes/gokit/xio/term"
 	"github.com/richardwilkes/gopathdep/repo"
 	"github.com/richardwilkes/gopathdep/util"
-	"github.com/richardwilkes/term"
 )
 
 // Cmd holds the reset command.

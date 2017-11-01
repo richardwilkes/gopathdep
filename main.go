@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/richardwilkes/cmdline"
+	"github.com/richardwilkes/gokit/cmdline"
 	"github.com/richardwilkes/gopathdep/subcmds/apply"
 	"github.com/richardwilkes/gopathdep/subcmds/check"
 	"github.com/richardwilkes/gopathdep/subcmds/record"

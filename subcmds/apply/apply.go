@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/richardwilkes/cmdline"
+	"github.com/richardwilkes/gokit/cmdline"
 	"github.com/richardwilkes/gopathdep/imports"
 	"github.com/richardwilkes/gopathdep/repo"
 )

@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"errors"
 
-	"github.com/richardwilkes/cmdline"
+	"github.com/richardwilkes/gokit/cmdline"
 	"github.com/richardwilkes/gopathdep/imports"
 	"github.com/richardwilkes/gopathdep/repo"
 	"github.com/richardwilkes/gopathdep/util"

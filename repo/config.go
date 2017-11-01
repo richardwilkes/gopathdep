@@ -9,8 +9,8 @@ import (
 
 	"gopkg.in/yaml.v2"
 
-	"github.com/richardwilkes/cmdline"
-	"github.com/richardwilkes/errs"
+	"github.com/richardwilkes/gokit/cmdline"
+	"github.com/richardwilkes/gokit/errs"
 	"github.com/richardwilkes/gopathdep/util"
 )
 

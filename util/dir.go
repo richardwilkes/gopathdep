@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/richardwilkes/errs"
+	"github.com/richardwilkes/gokit/errs"
 )
 
 // SrcPaths holds the $GOPATH source paths.

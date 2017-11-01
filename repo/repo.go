@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/richardwilkes/errs"
+	"github.com/richardwilkes/gokit/errs"
 	"github.com/richardwilkes/gopathdep/util"
 )
 
