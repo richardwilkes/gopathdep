@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/richardwilkes/gokit/cmdline"
 	"github.com/richardwilkes/gopathdep/subcmds/apply"
 	"github.com/richardwilkes/gopathdep/subcmds/check"
 	"github.com/richardwilkes/gopathdep/subcmds/record"
 	"github.com/richardwilkes/gopathdep/subcmds/reset"
+	"github.com/richardwilkes/toolbox/cmdline"
 )
 
 func main() {

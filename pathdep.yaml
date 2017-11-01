@@ -4,7 +4,7 @@ dependencies:
   commit: ae77be60afb1dcacde03767a8c37337fad28ac14
 - import: github.com/pkg/term
   commit: b1f72af2d63057363398bec5873d16a98b453312
-- import: github.com/richardwilkes/gokit
-  commit: 5e2187fcbf01f1033ba0bba899ddfb301d5f3c5f
+- import: github.com/richardwilkes/toolbox
+  commit: e09873b88970e0355168f10b27232b2a35fd7db1
 - import: gopkg.in/yaml.v2
   commit: eb3733d160e74a9c7e442f435eb3bea458e1d19f

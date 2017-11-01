@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/richardwilkes/gokit/cmdline"
 	"github.com/richardwilkes/gopathdep/imports"
 	"github.com/richardwilkes/gopathdep/repo"
+	"github.com/richardwilkes/toolbox/cmdline"
 )
 
 // Cmd holds the apply command.

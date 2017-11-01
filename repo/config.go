@@ -9,9 +9,9 @@ import (
 
 	"gopkg.in/yaml.v2"
 
-	"github.com/richardwilkes/gokit/cmdline"
-	"github.com/richardwilkes/gokit/errs"
 	"github.com/richardwilkes/gopathdep/util"
+	"github.com/richardwilkes/toolbox/cmdline"
+	"github.com/richardwilkes/toolbox/errs"
 )
 
 const (

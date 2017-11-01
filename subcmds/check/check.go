@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/richardwilkes/gokit/cmdline"
-	"github.com/richardwilkes/gokit/xio/term"
 	"github.com/richardwilkes/gopathdep/imports"
 	"github.com/richardwilkes/gopathdep/repo"
+	"github.com/richardwilkes/toolbox/cmdline"
+	"github.com/richardwilkes/toolbox/xio/term"
 )
 
 // Cmd holds the check command.

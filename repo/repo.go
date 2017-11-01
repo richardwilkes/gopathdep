@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/richardwilkes/gokit/errs"
 	"github.com/richardwilkes/gopathdep/util"
+	"github.com/richardwilkes/toolbox/errs"
 )
 
 // Prefixes for the refs.
