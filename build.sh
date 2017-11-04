@@ -18,4 +18,4 @@ else
 fi
 
 touch main.go
-go install -v -ldflags "-X github.com/richardwilkes/cmdline.GitVersion=$GIT_VERSION"
+go install -v -ldflags "-X github.com/richardwilkes/toolbox/cmdline.GitVersion=$GIT_VERSION"
