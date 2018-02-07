@@ -72,8 +72,11 @@ func (cmd *Cmd) Run(cl *cmdline.CmdLine, args []string) error {
 		}
 	}
 	cfg.Dependencies = make(repo.Dependencies, 0, len(newMap))
+	primary := util.StripPrefix(cfg.Dir, util.SrcPaths)
 	for _, dep := range newMap {
-		cfg.Dependencies = append(cfg.Dependencies, dep)
+		if dep.Import != primary {
+			cfg.Dependencies = append(cfg.Dependencies, dep)
+		}
 	}
 	err := cfg.Save()
 	if err == nil {
