@@ -77,8 +77,9 @@ func process(dep *repo.Dependency, depState imports.DepState, buffer *bytes.Buff
 					}
 				}
 				if err == nil {
+					elapsed := time.Since(started)
 					lock.Lock()
-					fmt.Printf("%v to clone %s and check out ", time.Since(started), dep.Import)
+					fmt.Printf("%v to clone %s and check out ", elapsed, dep.Import)
 					describe(dep)
 					lock.Unlock()
 				}
