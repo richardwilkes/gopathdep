@@ -5,6 +5,7 @@ import (
 	"errors"
 	"fmt"
 	"sync"
+	"time"
 
 	"github.com/richardwilkes/gopathdep/imports"
 	"github.com/richardwilkes/gopathdep/repo"
@@ -64,6 +65,7 @@ func process(dep *repo.Dependency, depState imports.DepState, buffer *bytes.Buff
 					branchOrTag = dep.Branch
 				}
 			}
+			started := time.Now()
 			if err = r.Clone(branchOrTag); err == nil {
 				if branchOrTag == "" && dep.Commit != "" {
 					var existing string
@@ -76,7 +78,7 @@ func process(dep *repo.Dependency, depState imports.DepState, buffer *bytes.Buff
 				}
 				if err == nil {
 					lock.Lock()
-					fmt.Printf("Cloned %s and checked out ", dep.Import)
+					fmt.Printf("%v to clone %s and check out ", time.Since(started), dep.Import)
 					describe(dep)
 					lock.Unlock()
 				}
