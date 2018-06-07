@@ -1,10 +1,8 @@
 version: "1.0"
 dependencies:
-- import: github.com/kardianos/osext
-  commit: ae77be60afb1dcacde03767a8c37337fad28ac14
 - import: github.com/pkg/term
-  commit: b1f72af2d63057363398bec5873d16a98b453312
+  commit: cda20d4ac917ad418d86e151eff439648b06185b
 - import: github.com/richardwilkes/toolbox
-  commit: e09873b88970e0355168f10b27232b2a35fd7db1
+  commit: 99fd5dee96f656afe852a84cdd8dc68ba1d3ebbc
 - import: gopkg.in/yaml.v2
-  commit: eb3733d160e74a9c7e442f435eb3bea458e1d19f
+  tag: v2.2.1
