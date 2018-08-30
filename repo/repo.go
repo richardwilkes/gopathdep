@@ -6,10 +6,12 @@ import (
 	"os"
 	"os/exec"
 	"path/filepath"
+	"sort"
 	"strings"
 
 	"github.com/richardwilkes/gopathdep/util"
 	"github.com/richardwilkes/toolbox/errs"
+	"github.com/richardwilkes/toolbox/txt"
 )
 
 // Prefixes for the refs.
@@ -167,6 +169,9 @@ func (repo *Repo) State() *State {
 						}
 					}
 				}
+				sort.Slice(state.Tags, func(i, j int) bool {
+					return txt.NaturalLess(state.Tags[j], state.Tags[i], true)
+				})
 			}
 
 			if result, err = repo.Exec("status", "--porcelain"); err == nil {
