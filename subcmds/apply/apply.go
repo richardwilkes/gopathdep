@@ -9,6 +9,7 @@ import (
 	"github.com/richardwilkes/gopathdep/imports"
 	"github.com/richardwilkes/gopathdep/repo"
 	"github.com/richardwilkes/toolbox/cmdline"
+	"github.com/richardwilkes/toolbox/errs"
 )
 
 // Cmd holds the apply command.
@@ -84,7 +85,7 @@ func process(dep *repo.Dependency, depState imports.DepState, buffer *bytes.Buff
 		}
 		if err != nil {
 			lock.Lock()
-			buffer.WriteString(fmt.Sprintf("Error: Unable to checkout %s\n", dep.Import))
+			fmt.Fprintln(buffer, errs.NewfWithCause(err, "Error: Unable to checkout %s", dep.Import))
 			lock.Unlock()
 		}
 	case imports.NotNeeded:
@@ -125,13 +126,13 @@ func process(dep *repo.Dependency, depState imports.DepState, buffer *bytes.Buff
 		}
 		if err != nil {
 			lock.Lock()
-			buffer.WriteString(fmt.Sprintf("Error: Unable to update %s\n", dep.Import))
+			fmt.Fprintln(buffer, errs.NewfWithCause(err, "Error: Unable to update %s", dep.Import))
 			lock.Unlock()
 		}
 	case imports.Dirty:
 		_, description := depState.MarkerAndDescription()
 		lock.Lock()
-		buffer.WriteString(fmt.Sprintf("Error: %s %s\n", dep.Import, description))
+		fmt.Fprintf(buffer, "Error: %s %s\n", dep.Import, description)
 		lock.Unlock()
 	}
 }
