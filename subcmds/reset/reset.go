@@ -39,7 +39,7 @@ func (cmd *Cmd) Run(cl *cmdline.CmdLine, args []string) error {
 			if info.IsDir() {
 				name := info.Name()
 				if name == ".git" {
-					roots[filepath.Dir(path)] = true
+					roots[filepath.ToSlash(filepath.Dir(path))] = true
 					return filepath.SkipDir
 				}
 				if strings.HasPrefix(name, ".") || strings.HasPrefix(name, "_") || name == "vendor" {
